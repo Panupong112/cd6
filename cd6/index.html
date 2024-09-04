@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <title>นารูโตะ - เว็บไซต์แฟนคลับ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* กำหนดความสูงของแถวเพื่อให้ .sidenav เป็น 100% (ปรับตามต้องการ) */
+    .row.content {height: 1500px}
+    
+    /* กำหนดสีพื้นหลังเป็นสีฟ้าและสูง 100% */
+    .sidenav {
+      background-color: #e0f7fa;
+      height: 100%;
+    }
+    
+    /* กำหนดสีพื้นหลังเป็นสีฟ้าเข้ม ข้อความสีขาว และการตั้งค่า padding */
+    footer {
+      background-color: #0288d1;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* ในหน้าจอขนาดเล็ก กำหนดความสูงเป็น 'auto' สำหรับ sidenav และ grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>บล็อกนารูโตะ</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">หน้าหลัก</a></li>
+        <li><a href="#section2">เพื่อน</a></li>
+        <li><a href="#section3">ครอบครัว</a></li>
+        <li><a href="#section4">รูปภาพ</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="ค้นหาบล็อก..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>โพสต์ล่าสุด</small></h4>
+      <hr>
+      <h2>ผจญภัยของนารูโตะ</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> โพสต์โดย ซาสึเกะ, 27 กันยายน 2024</h5>
+      <h5><span class="label label-danger">นินจา</span> <span class="label label-primary">การผจญภัย</span></h5><br>
+      <p>การผจญภัยของนารูโตะมีความสนุกสนานและน่าตื่นเต้นมากขึ้นทุกวัน! เรื่องราวนี้เกี่ยวกับการต่อสู้ของนารูโตะกับศัตรูที่แข็งแกร่งและการผูกมิตรกับนินจาคนอื่น ๆ ในหมู่บ้านโคโนฮะ...</p>
+      <br><br>
+      
+      <h4><small>โพสต์ล่าสุด</small></h4>
+      <hr>
+      <h2>ความสำเร็จของนารูโตะ</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> โพสต์โดย ซากุระ, 24 กันยายน 2024</h5>
+      <h5><span class="label label-success">ความสำเร็จ</span></h5><br>
+      <p>นารูโตะได้พิสูจน์ตัวเองว่าเป็นนินจาที่แข็งแกร่งและชาญฉลาดที่สุดในหมู่บ้านโคโนฮะ ความพยายามและการเสียสละของเขาได้พาเขาไปถึงจุดสูงสุด...</p>
+      <hr>
+
+      <h4>แสดงความคิดเห็น:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">ส่งความคิดเห็น</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> ความคิดเห็น:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="naruto.jpg" class="img-circle" height="65" width="65" alt="อวตาร">
+        </div>
+        <div class="col-sm-10">
+          <h4>ฮินาตะ <small>29 กันยายน 2024, 21:12 น.</small></h4>
+          <p>สู้ๆนะ! ฉันเชียร์คุณอยู่! นารูโตะเป็นนินจาที่เก่งมาก!</p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="sasuke.jpg" class="img-circle" height="65" width="65" alt="อวตาร">
+        </div>
+        <div class="col-sm-10">
+          <h4>ซาสึเกะ <small>25 กันยายน 2024, 20:25 น.</small></h4>
+          <p>ยินดีด้วยนะ! นารูโตะเก่งมาก ฉันรอดูเรื่องราวต่อไปของเขา!</p>
+          <br>
+          <p><span class="badge">1</span> ความคิดเห็น:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="kakashi.jpg" class="img-circle" height="65" width="65" alt="อวตาร">
+            </div>
+            <div class="col-xs-10">
+              <h4>คาคาชิ <small>25 กันยายน 2024, 20:28 น.</small></h4>
+              <p>ฉันก็คิดเช่นนั้นเหมือนกัน! สุดยอดไปเลย!</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>เว็บไซต์แฟนคลับนารูโตะ - ทุกเรื่องราวของนารูโตะที่คุณรัก</p>
+</footer>
+
+</body>
+</html>
